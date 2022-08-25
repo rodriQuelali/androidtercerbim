@@ -33,13 +33,13 @@ public class MainActivityProblemaSueldo extends AppCompatActivity {
                 if(Integer.parseInt(etSul1.getText().toString()) > 1000 && Integer.parseInt(etSul2.getText().toString()) > 1000 && Integer.parseInt(etSul3.getText().toString()) > 1000
                         && Integer.parseInt(etSul1.getText().toString()) < 40000 && Integer.parseInt(etSul2.getText().toString()) < 40000 && Integer.parseInt(etSul3.getText().toString()) < 40000){
                     //logica de para encontrar el sueldo de l medio de 3 sueldos
-                    if(Integer.parseInt(etSul1.getText().toString()) > Integer.parseInt(etSul2.getText().toString()) && Integer.parseInt(txt1.getText().toString()) > Integer.parseInt(txt3.getText().toString())){
+                    if(Integer.parseInt(etSul1.getText().toString()) > Integer.parseInt(etSul2.getText().toString()) && Integer.parseInt(etSul1.getText().toString()) > Integer.parseInt(etSul3.getText().toString())){
                         if(Integer.parseInt(etSul2.getText().toString()) > Integer.parseInt(etSul3.getText().toString())){
                             tvSul.setText(etSul2.getText().toString());
                         }else {
                             tvSul.setText(etSul3.getText().toString());
                         }
-                    }else if(Integer.parseInt(etSul2.getText().toString()) > Integer.parseInt(etSul1.getText().toString()) && Integer.parseInt(txt2.getText().toString()) > Integer.parseInt(txt3.getText().toString())){
+                    }else if(Integer.parseInt(etSul2.getText().toString()) > Integer.parseInt(etSul1.getText().toString()) && Integer.parseInt(etSul2.getText().toString()) > Integer.parseInt(etSul3.getText().toString())){
                         if(Integer.parseInt(etSul1.getText().toString()) > Integer.parseInt(etSul3.getText().toString())){
                             tvSul.setText(etSul1.getText().toString());
                         }else {
@@ -53,7 +53,7 @@ public class MainActivityProblemaSueldo extends AppCompatActivity {
                         }
                     }
                 }else {
-                    Toast.makeText(MainActivity2.this, "Solo se aceptan valor de 1000  a 40000", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityProblemaSueldo.this, "Solo se aceptan valor de 1000  a 40000", Toast.LENGTH_SHORT).show();
                 }
             }
         });

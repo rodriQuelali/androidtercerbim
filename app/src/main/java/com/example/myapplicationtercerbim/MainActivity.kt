@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val btn = findViewById<Button>(R.id.button)
+
         val btnsuma = findViewById<Button>(R.id.btnSumar)
         val et1 = findViewById<EditText>(R.id.et1kt)
         val et2 = findViewById<EditText>(R.id.et2kt)
@@ -22,14 +22,11 @@ class MainActivity : AppCompatActivity() {
         //Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show()
 
         //boton de abrir un nuevo activity
-        btn.setOnClickListener {
-            val i = Intent(this, proyectjava::class.java)
-            startActivity(i)
-        }
+
 
         //metodo de onclick del boton.
         btnsuma.setOnClickListener {
-            tv3.setText(et1.text.toString().toInt() + et2.text.toString().toInt());
+            tv3.setText((et1.text.toString().toInt() + et2.text.toString().toInt()).toString());
         }
     }
 
