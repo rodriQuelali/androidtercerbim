@@ -12,6 +12,8 @@ class Principal : AppCompatActivity() {
         val btnsumKt = findViewById<Button>(R.id.btnSumKt)
         val btnsumJava = findViewById<Button>(R.id.btnSumaJava)
         val btncalSu = findViewById<Button>(R.id.btnCalcuSuel)
+        val btnWeb = findViewById<Button>(R.id.btnWeb)
+        val btnAbriSha = findViewById<Button>(R.id.btnAbirShar);
         //abir activitys
         btnsumKt.setOnClickListener {
             val i = Intent(this, MainActivity::class.java)
@@ -23,6 +25,15 @@ class Principal : AppCompatActivity() {
         }
         btncalSu.setOnClickListener {
             val i = Intent(this, MainActivityProblemaSueldo::class.java)
+            startActivity(i)
+        }
+
+        btnWeb.setOnClickListener {
+            val i = Intent(this, MainActivityLanzarJava::class.java)
+            startActivity(i)
+        }
+        btnAbriSha.setOnClickListener {
+            val i= Intent(this, MainActivitySharedPre::class.java)
             startActivity(i)
         }
     }

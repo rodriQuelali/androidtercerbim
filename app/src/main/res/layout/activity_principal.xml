@@ -59,16 +59,25 @@
                 android:text="Calculo de sueldo medio" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btnWeb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:padding="15dp"
-                android:text="Button" />
+                android:text="Web " />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btnAbirShar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:text="Agenda con sharedPreferences" />
+
+            <Button
+                android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
