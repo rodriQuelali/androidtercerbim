@@ -77,13 +77,13 @@
                 android:text="Agenda con sharedPreferences" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnSQli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:padding="15dp"
-                android:text="Button" />
+                android:text="SQLite" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

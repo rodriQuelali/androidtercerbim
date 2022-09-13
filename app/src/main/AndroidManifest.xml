@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationTercerBim">
         <activity
+            android:name=".MainActivityDBlite"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitylistaAgenda"
+            android:exported="false" />
+        <activity
             android:name=".MainActivitySharedPre"
             android:exported="false" />
         <activity
