@@ -70,7 +70,7 @@ public class MainActivityDBlite extends AppCompatActivity {
             public void onClick(View view) {
                 AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(MainActivityDBlite.this, "administracion", null, 1);
                 SQLiteDatabase bd = admin.getWritableDatabase();
-                Cursor fila = bd.rawQuery("select * from articulos where descripcion ='" + txtD.getText().toString() + "'", null);
+                Cursor fila = bd.rawQuery("select * from articulos where descripcion ='" + txtD.getText().toString() + "' and codigo=", null);
                 if(fila.moveToFirst()){
                     txtC.setText(fila.getString(0));
                     txtP.setText(fila.getString(2));

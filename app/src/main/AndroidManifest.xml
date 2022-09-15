@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationTercerBim">
         <activity
+            android:name=".Principal"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityDBlite"
             android:exported="false" />
         <activity
@@ -42,7 +45,7 @@
             android:name=".proyectjava"
             android:exported="false" />
         <activity
-            android:name=".Principal"
+            android:name=".MainActivityLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
